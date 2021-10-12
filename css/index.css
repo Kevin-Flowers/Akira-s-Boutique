@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Tajawal:wght@800&display=swap');
+
+body{
+    margin: 0px;
+}
+.menu{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: fixed;
+    width: 15%;
+    z-index: 3;
+}
+
+.boton-menu{
+    text-decoration: none;
+    margin: 10%;
+    font-size: 25px;
+    font-family: 'Tajawal', sans-serif;
+    color: #F0F2F0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000C40;
+    transition: 0.5s;
+}
+.boton-menu:hover{
+    color: #000C40;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F0F2F0;
+}
+
+.titulos{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cabezera{
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabezera ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation: cambiar 15s infinite;
+}
+.productos{
+    display: flex;
+    width: 85%;
+    height: 100%;
+    margin: 0px;
+    background: #F0F2F0;
+    background: -webkit-linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+    background: linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.productos-ale{
+    display: flex;
+    width: 85%;
+    height: 100%;
+    margin: 0px;
+    background: transparent;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.producto{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 25px;
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+    color: #F0F2F0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000C40;
+    transition: 1s;
+}
+
+.producto:hover{
+    box-shadow: 0px 0px 10px 5px #000C40;
+    color: #000C40;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F0F2F0;
+}
+
+.producto img{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.producto-this{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px 5px #000C40;
+    border-radius: 25px;
+    margin: 25px;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.producto-this img{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Tajawal', sans-serif;
+    color: #F0F2F0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000C40;
+    transition: 0.5s;
+}
+
+.titulo{
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    color: transparent;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+.titulo:hover{
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.tapa{
+    background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F0F2F0, #fff, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F0F2F0, #fff, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 1;
+    top: 657px;
+}
+
+@keyframes cambiar{
+    0%{margin-top: 0;}
+
+    25%{margin-top: -220px;}
+    50%{margin-top: -440px;}
+    75%{margin-top: -220px;}
+
+    100%{margin-top: 0;}
+}
+
+.redes img{
+    width: 30px;
+    height: 30px;
+}
+
+.redes{
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.tapa-2{
+    background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F0F2F0, #fff, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F0F2F0, #fff, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 1;
+}
+
+.main-p{
+    display: flex;
+    left: 15%;
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    margin: 0px;
+    background: #fff;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.redes-2 img{
+    width: 50px;
+    height: 50px;
+}
+.redes-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wasap{
+    display: flex;
+    align-items: center;
+}
+.cuerpo{
+    display: flex;
+    background: #F0F2F0;
+    background: -webkit-linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+    background: linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+    top: 657px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    justify-content: flex-end}
+
+.cuerpo-2{
+        display: flex;
+        background: #F0F2F0;
+        background: -webkit-linear-gradient(to bottom, #000C40, #fff, #F0F2F0);
+        background: linear-gradient(to bottom, #000C40, #fff, #F0F2F0);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+        justify-content: flex-end}
+
+@media  screen and (max-width: 400px) {
+    .titulo {
+        font-family: 'Merriweather', serif;
+        font-size: 40px;
+        color: transparent;
+        letter-spacing: 5px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+    }
+    .titulo:hover{
+        font-family: 'Merriweather', serif;
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+    .titulos {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: hidden;
+    }
+    .cabezera ul {
+        list-style: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        animation: cambiar 15s infinite;
+    }
+    .redes {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    @keyframes cambiar{
+        0%{margin-top: 0;}
+    
+        25%{margin-top: -150px;}
+        50%{margin-top: -300px;}
+        75%{margin-top: -150px;}
+    
+        100%{margin-top: 0;}
+    }
+    .cuerpo {
+        display: flex;
+        background: #F0F2F0;
+        background: -webkit-linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+        background: linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+        top: 810px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .productos-ale {
+        display: flex;
+        width: 85%;
+        height: 100%;
+        margin: 0px;
+        background: transparent;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+    }
+    .producto {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 25px;
+        margin: 15px;
+        text-decoration: none;
+        font-family: 'Tajawal', sans-serif;
+        color: #F0F2F0;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000C40;
+        transition: 1s;
+    }
+    .cuerpo-2{
+        background: #F0F2F0;
+    background: -webkit-linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+    background: linear-gradient(to bottom, #F0F2F0, #fff, #000C40);
+    }
+    .main-p {
+        display: flex;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        background: #fff;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+    }
+    .producto-this {
+        height: 310px;
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 5px #000c40;
+        border-radius: 25px;
+        margin: 25px;
+        text-decoration: none;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+}

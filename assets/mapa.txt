@@ -1,0 +1,15 @@
+<?xml version="1.0" enconding="UTF-8" ?>
+<registro>
+      <raw>
+            <id></id>
+            <nombre></nombre>
+            <precio></precio>
+            <url></url>
+      </raw>
+      <raw>
+            <id></id>
+            <nombre></nombre>
+            <precio></precio>
+            <url></url>
+      </raw>
+</registro>
